@@ -1,494 +1,442 @@
 <templateSet group="Jasmine">
-  <template name="des" value="describe('$VAR0$', () =&gt; {&#10;$END$&#10;});" description="Describe Jasmine" toReformat="true" toShortenFQNames="true">
-    <variable name="VAR0" expression="" defaultValue="" alwaysStopAt="true" />
+  <template name="des" value="describe('$description$', () =&gt; {&#10;    $END$&#10;});" description="DEScribe" toReformat="true" toShortenFQNames="true">
+    <variable name="description" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
-      <option name="HAML" value="false" />
       <option name="ACTION_SCRIPT" value="false" />
       <option name="ASPECTJ" value="false" />
-      <option name="JAVA_SCRIPT" value="true" />
-      <option name="MAVEN" value="false" />
       <option name="GROOVY" value="false" />
-      <option name="PHP" value="false" />
+      <option name="GSP" value="false" />
+      <option name="HAML" value="false" />
+      <option name="JAVA_SCRIPT" value="true" />
       <option name="JSP" value="false" />
       <option name="MXML" value="false" />
+      <option name="PHP" value="false" />
       <option name="SQL" value="false" />
-      <option name="GSP" value="false" />
     </context>
   </template>
-  <template name="it" value="it('$VAL0$', () =&gt; {&#10;    $END$&#10;});" description="it" toReformat="true" toShortenFQNames="true">
-    <variable name="VAL0" expression="" defaultValue="description" alwaysStopAt="true" />
+  <template name="it" value="it('should $description$', $body$);" description="IT" toReformat="true" toShortenFQNames="true">
+    <variable name="description" expression="&quot;do something&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="body" expression="&quot;() =&gt; {}&quot;" defaultValue="" alwaysStopAt="true" />
     <context>
-      <option name="HAML" value="false" />
       <option name="ACTION_SCRIPT" value="true" />
       <option name="ASPECTJ" value="false" />
-      <option name="JAVA_SCRIPT" value="true" />
-      <option name="MAVEN" value="false" />
       <option name="GROOVY" value="false" />
-      <option name="PHP" value="false" />
+      <option name="GSP" value="false" />
+      <option name="HAML" value="false" />
+      <option name="JAVA_SCRIPT" value="true" />
       <option name="JSP" value="false" />
       <option name="MXML" value="false" />
+      <option name="PHP" value="false" />
       <option name="SQL" value="false" />
-      <option name="GSP" value="false" />
     </context>
   </template>
-  <template name="bef" value="beforeEach(() =&gt; {&#10;  $END$&#10;});" description="before each" toReformat="true" toShortenFQNames="true">
+  <template name="bef" value="beforeEach($body$);" description="BEFore each" toReformat="true" toShortenFQNames="true">
+    <variable name="body" expression="&quot;() =&gt; {}&quot;" defaultValue="" alwaysStopAt="true" />
     <context>
-      <option name="HAML" value="false" />
       <option name="ACTION_SCRIPT" value="true" />
       <option name="ASPECTJ" value="false" />
-      <option name="JAVA_SCRIPT" value="true" />
-      <option name="MAVEN" value="false" />
       <option name="GROOVY" value="false" />
-      <option name="PHP" value="false" />
+      <option name="GSP" value="false" />
+      <option name="HAML" value="false" />
+      <option name="JAVA_SCRIPT" value="true" />
       <option name="JSP" value="false" />
       <option name="MXML" value="false" />
+      <option name="PHP" value="false" />
       <option name="SQL" value="false" />
-      <option name="GSP" value="false" />
     </context>
   </template>
-  <template name="aft" value="afterEach(() =&gt; {&#10;  $END$&#10;});" description="after each" toReformat="true" toShortenFQNames="true">
+  <template name="aft" value="afterEach($body$);" description="AFTer each" toReformat="true" toShortenFQNames="true">
+    <variable name="body" expression="&quot;() =&gt; {}&quot;" defaultValue="" alwaysStopAt="true" />
     <context>
-      <option name="HAML" value="false" />
       <option name="ACTION_SCRIPT" value="true" />
       <option name="ASPECTJ" value="false" />
-      <option name="JAVA_SCRIPT" value="true" />
-      <option name="MAVEN" value="false" />
       <option name="GROOVY" value="false" />
-      <option name="PHP" value="false" />
+      <option name="GSP" value="false" />
+      <option name="HAML" value="false" />
+      <option name="JAVA_SCRIPT" value="true" />
       <option name="JSP" value="false" />
       <option name="MXML" value="false" />
+      <option name="PHP" value="false" />
       <option name="SQL" value="false" />
-      <option name="GSP" value="false" />
     </context>
   </template>
-  <template name="any" value="jasmine.any($VAL0$)$END$" description="any" toReformat="true" toShortenFQNames="true">
-    <variable name="VAL0" expression="" defaultValue="" alwaysStopAt="true" />
+  <template name="any" value="jasmine.any($type$)" description="ANY" toReformat="true" toShortenFQNames="true">
+    <variable name="type" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
-      <option name="HAML" value="false" />
       <option name="ACTION_SCRIPT" value="true" />
       <option name="ASPECTJ" value="false" />
-      <option name="JAVA_SCRIPT" value="true" />
-      <option name="MAVEN" value="false" />
       <option name="GROOVY" value="false" />
-      <option name="PHP" value="false" />
+      <option name="GSP" value="false" />
+      <option name="HAML" value="false" />
+      <option name="JAVA_SCRIPT" value="true" />
       <option name="JSP" value="false" />
       <option name="MXML" value="false" />
+      <option name="PHP" value="false" />
       <option name="SQL" value="false" />
-      <option name="GSP" value="false" />
     </context>
   </template>
-  <template name="ex" value="expect($VAL0$)$END$;" description="expect" toReformat="true" toShortenFQNames="true">
-    <variable name="VAL0" expression="" defaultValue="" alwaysStopAt="true" />
+  <template name="ex" value="expect($actual$)$END$;" description="EXpect" toReformat="true" toShortenFQNames="true">
+    <variable name="actual" expression="&quot;actual&quot;" defaultValue="" alwaysStopAt="true" />
     <context>
-      <option name="HAML" value="false" />
       <option name="ACTION_SCRIPT" value="true" />
       <option name="ASPECTJ" value="false" />
-      <option name="JAVA_SCRIPT" value="true" />
-      <option name="MAVEN" value="false" />
       <option name="GROOVY" value="false" />
-      <option name="PHP" value="false" />
+      <option name="GSP" value="false" />
+      <option name="HAML" value="false" />
+      <option name="JAVA_SCRIPT" value="true" />
       <option name="JSP" value="false" />
       <option name="MXML" value="false" />
+      <option name="PHP" value="false" />
       <option name="SQL" value="false" />
-      <option name="GSP" value="false" />
     </context>
   </template>
-  <template name="ee" value="expect($VAL0$).toEqual($VAL1$);$END$" description="expect to equal" toReformat="true" toShortenFQNames="true">
-    <variable name="VAL0" expression="" defaultValue="" alwaysStopAt="true" />
-    <variable name="VAL1" expression="" defaultValue="" alwaysStopAt="true" />
+  <template name="ee" value="expect($actual$).toEqual($expected$);&#10;$END$" description="Expect to Equal" toReformat="true" toShortenFQNames="true">
+    <variable name="actual" expression="&quot;actual&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="expected" expression="&quot;expected&quot;" defaultValue="" alwaysStopAt="true" />
     <context>
-      <option name="HAML" value="false" />
       <option name="ACTION_SCRIPT" value="false" />
       <option name="ASPECTJ" value="false" />
-      <option name="JAVA_SCRIPT" value="true" />
-      <option name="MAVEN" value="false" />
       <option name="GROOVY" value="false" />
-      <option name="PHP" value="false" />
+      <option name="GSP" value="false" />
+      <option name="HAML" value="false" />
+      <option name="JAVA_SCRIPT" value="true" />
       <option name="JSP" value="false" />
       <option name="MXML" value="false" />
+      <option name="PHP" value="false" />
       <option name="SQL" value="false" />
-      <option name="GSP" value="false" />
     </context>
   </template>
-  <template name="em" value="expect($VAL0$).toMatch($VAL1$);$END$" description="expect to match" toReformat="true" toShortenFQNames="true">
-    <variable name="VAL0" expression="" defaultValue="" alwaysStopAt="true" />
-    <variable name="VAL1" expression="" defaultValue="" alwaysStopAt="true" />
+  <template name="em" value="expect($actual$).toMatch($expected$);&#10;$END$" description="Expect to Match" toReformat="true" toShortenFQNames="true">
+    <variable name="actual" expression="&quot;actual&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="expected" expression="&quot;expected&quot;" defaultValue="" alwaysStopAt="true" />
     <context>
-      <option name="HAML" value="false" />
       <option name="ACTION_SCRIPT" value="false" />
       <option name="ASPECTJ" value="false" />
-      <option name="JAVA_SCRIPT" value="true" />
-      <option name="MAVEN" value="false" />
       <option name="GROOVY" value="false" />
-      <option name="PHP" value="false" />
+      <option name="GSP" value="false" />
+      <option name="HAML" value="false" />
+      <option name="JAVA_SCRIPT" value="true" />
       <option name="JSP" value="false" />
       <option name="MXML" value="false" />
+      <option name="PHP" value="false" />
       <option name="SQL" value="false" />
-      <option name="GSP" value="false" />
     </context>
   </template>
-  <template name="et" value="expect($VAL0$).toBeTruthy();$END$" description="expect to be truthy" toReformat="true" toShortenFQNames="true">
-    <variable name="VAL0" expression="" defaultValue="" alwaysStopAt="true" />
+  <template name="et" value="expect($actual$).toBeTruthy();&#10;$END$" description="Expect to be Truthy" toReformat="true" toShortenFQNames="true">
+    <variable name="actual" expression="&quot;actual&quot;" defaultValue="" alwaysStopAt="true" />
     <context>
-      <option name="HAML" value="false" />
       <option name="ACTION_SCRIPT" value="false" />
       <option name="ASPECTJ" value="false" />
-      <option name="JAVA_SCRIPT" value="true" />
-      <option name="MAVEN" value="false" />
       <option name="GROOVY" value="false" />
-      <option name="PHP" value="false" />
+      <option name="GSP" value="false" />
+      <option name="HAML" value="false" />
+      <option name="JAVA_SCRIPT" value="true" />
       <option name="JSP" value="false" />
       <option name="MXML" value="false" />
+      <option name="PHP" value="false" />
       <option name="SQL" value="false" />
-      <option name="GSP" value="false" />
     </context>
   </template>
-  <template name="ef" value="expect($VAL0$).toBeFalsy();$END$" description="expect to be falsy" toReformat="true" toShortenFQNames="true">
-    <variable name="VAL0" expression="" defaultValue="" alwaysStopAt="true" />
+  <template name="ef" value="expect($actual$).toBeFalsy();&#10;$END$" description="Expect to be Falsy" toReformat="true" toShortenFQNames="true">
+    <variable name="actual" expression="&quot;actual&quot;" defaultValue="" alwaysStopAt="true" />
     <context>
-      <option name="HAML" value="false" />
       <option name="ACTION_SCRIPT" value="false" />
       <option name="ASPECTJ" value="false" />
-      <option name="JAVA_SCRIPT" value="true" />
-      <option name="MAVEN" value="false" />
       <option name="GROOVY" value="false" />
-      <option name="PHP" value="false" />
+      <option name="GSP" value="false" />
+      <option name="HAML" value="false" />
+      <option name="JAVA_SCRIPT" value="true" />
       <option name="JSP" value="false" />
       <option name="MXML" value="false" />
+      <option name="PHP" value="false" />
       <option name="SQL" value="false" />
-      <option name="GSP" value="false" />
     </context>
   </template>
-  <template name="ed" value="expect($VAL0$).toBeDefined();$END$" description="expect to be defined" toReformat="true" toShortenFQNames="true">
-    <variable name="VAL0" expression="" defaultValue="" alwaysStopAt="true" />
+  <template name="ed" value="expect($actual$).toBeDefined();&#10;$END$" description="Expect to be Defined" toReformat="true" toShortenFQNames="true">
+    <variable name="actual" expression="&quot;actual&quot;" defaultValue="" alwaysStopAt="true" />
     <context>
-      <option name="HAML" value="false" />
       <option name="ACTION_SCRIPT" value="true" />
       <option name="ASPECTJ" value="false" />
-      <option name="JAVA_SCRIPT" value="true" />
-      <option name="MAVEN" value="false" />
       <option name="GROOVY" value="false" />
-      <option name="PHP" value="false" />
+      <option name="GSP" value="false" />
+      <option name="HAML" value="false" />
+      <option name="JAVA_SCRIPT" value="true" />
       <option name="JSP" value="false" />
       <option name="MXML" value="false" />
+      <option name="PHP" value="false" />
       <option name="SQL" value="false" />
-      <option name="GSP" value="false" />
     </context>
   </template>
-  <template name="en" value="expect($VAL0$).toBeNull();$END$" description="expect to be null" toReformat="true" toShortenFQNames="true">
-    <variable name="VAL0" expression="" defaultValue="" alwaysStopAt="true" />
+  <template name="en" value="expect($actual$).toBeNull();&#10;$END$" description="Expect to be Null" toReformat="true" toShortenFQNames="true">
+    <variable name="actual" expression="&quot;actual&quot;" defaultValue="" alwaysStopAt="true" />
     <context>
-      <option name="HAML" value="false" />
       <option name="ACTION_SCRIPT" value="false" />
       <option name="ASPECTJ" value="false" />
-      <option name="JAVA_SCRIPT" value="true" />
-      <option name="MAVEN" value="false" />
       <option name="GROOVY" value="false" />
-      <option name="PHP" value="false" />
+      <option name="GSP" value="false" />
+      <option name="HAML" value="false" />
+      <option name="JAVA_SCRIPT" value="true" />
       <option name="JSP" value="false" />
       <option name="MXML" value="false" />
+      <option name="PHP" value="false" />
       <option name="SQL" value="false" />
-      <option name="GSP" value="false" />
     </context>
   </template>
-  <template name="ec" value="expect($VAL0$).toContain($VAL1$);$END$" description="expect to contain" toReformat="true" toShortenFQNames="true">
-    <variable name="VAL0" expression="" defaultValue="" alwaysStopAt="true" />
-    <variable name="VAL1" expression="" defaultValue="" alwaysStopAt="true" />
+  <template name="ec" value="expect($actual$).toContain($expected$);&#10;$END$" description="Expect to Contain" toReformat="true" toShortenFQNames="true">
+    <variable name="actual" expression="&quot;actual&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="expected" expression="&quot;expected&quot;" defaultValue="" alwaysStopAt="true" />
     <context>
-      <option name="HAML" value="false" />
       <option name="ACTION_SCRIPT" value="false" />
       <option name="ASPECTJ" value="false" />
-      <option name="JAVA_SCRIPT" value="true" />
-      <option name="MAVEN" value="false" />
       <option name="GROOVY" value="false" />
-      <option name="PHP" value="false" />
+      <option name="GSP" value="false" />
+      <option name="HAML" value="false" />
+      <option name="JAVA_SCRIPT" value="true" />
       <option name="JSP" value="false" />
       <option name="MXML" value="false" />
+      <option name="PHP" value="false" />
       <option name="SQL" value="false" />
-      <option name="GSP" value="false" />
     </context>
   </template>
-  <template name="notx" value="expect($VAL0$).not$END$;" description="expect not" toReformat="true" toShortenFQNames="true">
-    <variable name="VAL0" expression="" defaultValue="" alwaysStopAt="true" />
+  <template name="exn" value="expect($actual$).not$END$;" description="EXpect Not" toReformat="true" toShortenFQNames="true">
+    <variable name="actual" expression="&quot;actual&quot;" defaultValue="" alwaysStopAt="true" />
     <context>
-      <option name="HAML" value="false" />
       <option name="ACTION_SCRIPT" value="false" />
       <option name="ASPECTJ" value="false" />
-      <option name="JAVA_SCRIPT" value="true" />
-      <option name="MAVEN" value="false" />
       <option name="GROOVY" value="false" />
-      <option name="PHP" value="false" />
+      <option name="GSP" value="false" />
+      <option name="HAML" value="false" />
+      <option name="JAVA_SCRIPT" value="true" />
       <option name="JSP" value="false" />
       <option name="MXML" value="false" />
+      <option name="PHP" value="false" />
       <option name="SQL" value="false" />
-      <option name="GSP" value="false" />
     </context>
   </template>
-  <template name="note" value="expect($VAL0$).not.toEqual($VAL1$);$END$" description="expect not to equal" toReformat="true" toShortenFQNames="true">
-    <variable name="VAL0" expression="" defaultValue="" alwaysStopAt="true" />
-    <variable name="VAL1" expression="" defaultValue="" alwaysStopAt="true" />
+  <template name="ene" value="expect($actual$).not.toEqual($expected$);&#10;$END$" description="Expect Not to Equal" toReformat="true" toShortenFQNames="true">
+    <variable name="actual" expression="&quot;actual&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="expected" expression="&quot;expected&quot;" defaultValue="" alwaysStopAt="true" />
     <context>
-      <option name="HAML" value="false" />
       <option name="ACTION_SCRIPT" value="true" />
       <option name="ASPECTJ" value="false" />
-      <option name="JAVA_SCRIPT" value="true" />
-      <option name="MAVEN" value="false" />
       <option name="GROOVY" value="false" />
-      <option name="PHP" value="false" />
+      <option name="GSP" value="false" />
+      <option name="HAML" value="false" />
+      <option name="JAVA_SCRIPT" value="true" />
       <option name="JSP" value="false" />
       <option name="MXML" value="false" />
+      <option name="PHP" value="false" />
       <option name="SQL" value="false" />
-      <option name="GSP" value="false" />
     </context>
   </template>
-  <template name="notm" value="expect($VAL0$).not.toMatch($VAL1$);$END$" description="expect not to match" toReformat="true" toShortenFQNames="true">
-    <variable name="VAL0" expression="" defaultValue="" alwaysStopAt="true" />
-    <variable name="VAL1" expression="" defaultValue="" alwaysStopAt="true" />
+  <template name="enm" value="expect($actual$).not.toMatch($expected$);&#10;$END$" description="Expect Not to Match" toReformat="true" toShortenFQNames="true">
+    <variable name="actual" expression="&quot;actual&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="expected" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
-      <option name="HAML" value="false" />
       <option name="ACTION_SCRIPT" value="false" />
       <option name="ASPECTJ" value="false" />
-      <option name="JAVA_SCRIPT" value="true" />
-      <option name="MAVEN" value="false" />
       <option name="GROOVY" value="false" />
-      <option name="PHP" value="false" />
+      <option name="GSP" value="false" />
+      <option name="HAML" value="false" />
+      <option name="JAVA_SCRIPT" value="true" />
       <option name="JSP" value="false" />
       <option name="MXML" value="false" />
+      <option name="PHP" value="false" />
       <option name="SQL" value="false" />
-      <option name="GSP" value="false" />
     </context>
   </template>
-  <template name="nott" value="expect($VAL0$).not.toBeTruthy();$END$" description="expect not to be truthy" toReformat="true" toShortenFQNames="true">
-    <variable name="VAL0" expression="" defaultValue="" alwaysStopAt="true" />
+  <template name="ent" value="expect($actual$).not.toBeTruthy();&#10;$END$" description="Expect Not to be Truthy" toReformat="true" toShortenFQNames="true">
+    <variable name="actual" expression="&quot;actual&quot;" defaultValue="" alwaysStopAt="true" />
     <context>
-      <option name="HAML" value="false" />
       <option name="ACTION_SCRIPT" value="false" />
       <option name="ASPECTJ" value="false" />
-      <option name="JAVA_SCRIPT" value="true" />
-      <option name="MAVEN" value="false" />
       <option name="GROOVY" value="false" />
-      <option name="PHP" value="false" />
+      <option name="GSP" value="false" />
+      <option name="HAML" value="false" />
+      <option name="JAVA_SCRIPT" value="true" />
       <option name="JSP" value="false" />
       <option name="MXML" value="false" />
+      <option name="PHP" value="false" />
       <option name="SQL" value="false" />
-      <option name="GSP" value="false" />
     </context>
   </template>
-  <template name="notf" value="expect($VAL0$).not.toBeFalsy();$END$" description="expect not to be falsy" toReformat="true" toShortenFQNames="true">
-    <variable name="VAL0" expression="" defaultValue="" alwaysStopAt="true" />
+  <template name="enf" value="expect($actual$).not.toBeFalsy();&#10;$END$" description="Expect Not to be Falsy" toReformat="true" toShortenFQNames="true">
+    <variable name="actual" expression="&quot;actual&quot;" defaultValue="" alwaysStopAt="true" />
     <context>
-      <option name="HAML" value="false" />
       <option name="ACTION_SCRIPT" value="false" />
       <option name="ASPECTJ" value="false" />
-      <option name="JAVA_SCRIPT" value="true" />
-      <option name="MAVEN" value="false" />
       <option name="GROOVY" value="false" />
-      <option name="PHP" value="false" />
+      <option name="GSP" value="false" />
+      <option name="HAML" value="false" />
+      <option name="JAVA_SCRIPT" value="true" />
       <option name="JSP" value="false" />
       <option name="MXML" value="false" />
+      <option name="PHP" value="false" />
       <option name="SQL" value="false" />
-      <option name="GSP" value="false" />
     </context>
   </template>
-  <template name="notd" value="expect($VAL0$).not.toBeDefined();$END$&#10;" description="expect not to be defined" toReformat="true" toShortenFQNames="true">
-    <variable name="VAL0" expression="" defaultValue="" alwaysStopAt="true" />
+  <template name="enn" value="expect($actual$).not.toBeNull();&#10;$END$&#10;" description="Expect Not to be Null" toReformat="true" toShortenFQNames="true">
+    <variable name="actual" expression="&quot;actual&quot;" defaultValue="" alwaysStopAt="true" />
     <context>
-      <option name="HAML" value="false" />
       <option name="ACTION_SCRIPT" value="false" />
       <option name="ASPECTJ" value="false" />
-      <option name="JAVA_SCRIPT" value="true" />
-      <option name="MAVEN" value="false" />
       <option name="GROOVY" value="false" />
-      <option name="PHP" value="false" />
+      <option name="GSP" value="false" />
+      <option name="HAML" value="false" />
+      <option name="JAVA_SCRIPT" value="true" />
       <option name="JSP" value="false" />
       <option name="MXML" value="false" />
+      <option name="PHP" value="false" />
       <option name="SQL" value="false" />
-      <option name="GSP" value="false" />
     </context>
   </template>
-  <template name="notn" value="expect($VAL0$).not.toBeNull();$END$&#10;" description="expect not to be null" toReformat="true" toShortenFQNames="true">
-    <variable name="VAL0" expression="" defaultValue="" alwaysStopAt="true" />
+  <template name="enc" value="expect($actual$).not.toContain($expected$);&#10;$END$&#10;" description="Expect Not to Contain" toReformat="true" toShortenFQNames="true">
+    <variable name="actual" expression="&quot;actual&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="expected" expression="&quot;expected&quot;" defaultValue="" alwaysStopAt="true" />
     <context>
-      <option name="HAML" value="false" />
       <option name="ACTION_SCRIPT" value="false" />
       <option name="ASPECTJ" value="false" />
-      <option name="JAVA_SCRIPT" value="true" />
-      <option name="MAVEN" value="false" />
       <option name="GROOVY" value="false" />
-      <option name="PHP" value="false" />
+      <option name="GSP" value="false" />
+      <option name="HAML" value="false" />
+      <option name="JAVA_SCRIPT" value="true" />
       <option name="JSP" value="false" />
       <option name="MXML" value="false" />
+      <option name="PHP" value="false" />
       <option name="SQL" value="false" />
-      <option name="GSP" value="false" />
     </context>
   </template>
-  <template name="notc" value="expect($VAL0$).not.toContain($VAL1$);$END$&#10;" description="expect not to contain" toReformat="true" toShortenFQNames="true">
-    <variable name="VAL0" expression="" defaultValue="" alwaysStopAt="true" />
-    <variable name="VAL1" expression="" defaultValue="" alwaysStopAt="true" />
+  <template name="s" value="spyOn($object$, '$method$');&#10;$end$" description="Spy on" toReformat="true" toShortenFQNames="true">
+    <variable name="object" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="method" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="end" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
-      <option name="HAML" value="false" />
       <option name="ACTION_SCRIPT" value="false" />
       <option name="ASPECTJ" value="false" />
-      <option name="JAVA_SCRIPT" value="true" />
-      <option name="MAVEN" value="false" />
       <option name="GROOVY" value="false" />
-      <option name="PHP" value="false" />
+      <option name="GSP" value="false" />
+      <option name="HAML" value="false" />
+      <option name="JAVA_SCRIPT" value="true" />
       <option name="JSP" value="false" />
       <option name="MXML" value="false" />
+      <option name="PHP" value="false" />
       <option name="SQL" value="false" />
-      <option name="GSP" value="false" />
     </context>
   </template>
-  <template name="s" value="spyOn($VAL0$, '$VAL1$');$END$" description="spy on" toReformat="true" toShortenFQNames="true">
-    <variable name="VAL0" expression="" defaultValue="" alwaysStopAt="true" />
-    <variable name="VAL1" expression="" defaultValue="" alwaysStopAt="true" />
+  <template name="sr" value="spyOn($object$, '$method$').and.returnValue($value$);&#10;$END$" description="Spy on and Return" toReformat="true" toShortenFQNames="true">
+    <variable name="object" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="method" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="value" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
-      <option name="HAML" value="false" />
       <option name="ACTION_SCRIPT" value="false" />
       <option name="ASPECTJ" value="false" />
-      <option name="JAVA_SCRIPT" value="true" />
-      <option name="MAVEN" value="false" />
       <option name="GROOVY" value="false" />
-      <option name="PHP" value="false" />
+      <option name="GSP" value="false" />
+      <option name="HAML" value="false" />
+      <option name="JAVA_SCRIPT" value="true" />
       <option name="JSP" value="false" />
       <option name="MXML" value="false" />
+      <option name="PHP" value="false" />
       <option name="SQL" value="false" />
-      <option name="GSP" value="false" />
     </context>
   </template>
-  <template name="sr" value="spyOn($VAL0$, '$VAL1$').and.returnValue($VAL2$);$END$" description="spy on and return" toReformat="true" toShortenFQNames="true">
-    <variable name="VAL0" expression="" defaultValue="" alwaysStopAt="true" />
-    <variable name="VAL1" expression="" defaultValue="" alwaysStopAt="true" />
-    <variable name="VAL2" expression="" defaultValue="" alwaysStopAt="true" />
+  <template name="st" value="spyOn($object$, '$method$').and.throwError($VAL2);$END$" description="Spy on and Throw" toReformat="true" toShortenFQNames="true">
+    <variable name="object" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="method" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
-      <option name="HAML" value="false" />
       <option name="ACTION_SCRIPT" value="false" />
       <option name="ASPECTJ" value="false" />
-      <option name="JAVA_SCRIPT" value="true" />
-      <option name="MAVEN" value="false" />
       <option name="GROOVY" value="false" />
-      <option name="PHP" value="false" />
+      <option name="GSP" value="false" />
+      <option name="HAML" value="false" />
+      <option name="JAVA_SCRIPT" value="true" />
       <option name="JSP" value="false" />
       <option name="MXML" value="false" />
+      <option name="PHP" value="false" />
       <option name="SQL" value="false" />
-      <option name="GSP" value="false" />
     </context>
   </template>
-  <template name="st" value="spyOn($VAL0$, '$VAL1$').and.throwError($VAL2);$END$" description="spy on and throw" toReformat="true" toShortenFQNames="true">
-    <variable name="VAL0" expression="" defaultValue="" alwaysStopAt="true" />
-    <variable name="VAL1" expression="" defaultValue="" alwaysStopAt="true" />
+  <template name="sct" value="spyOn($object$, '$method$').and.callThrough();&#10;$END$" description="Spy on and Call Through" toReformat="true" toShortenFQNames="true">
+    <variable name="object" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="method" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
-      <option name="HAML" value="false" />
       <option name="ACTION_SCRIPT" value="false" />
       <option name="ASPECTJ" value="false" />
-      <option name="JAVA_SCRIPT" value="true" />
-      <option name="MAVEN" value="false" />
       <option name="GROOVY" value="false" />
-      <option name="PHP" value="false" />
+      <option name="GSP" value="false" />
+      <option name="HAML" value="false" />
+      <option name="JAVA_SCRIPT" value="true" />
       <option name="JSP" value="false" />
       <option name="MXML" value="false" />
+      <option name="PHP" value="false" />
       <option name="SQL" value="false" />
-      <option name="GSP" value="false" />
     </context>
   </template>
-  <template name="sct" value="spyOn($VAL0$, '$VAL1$').and.callThrough();$END$" description="spy on and call through" toReformat="true" toShortenFQNames="true">
-    <variable name="VAL0" expression="" defaultValue="" alwaysStopAt="true" />
-    <variable name="VAL1" expression="" defaultValue="" alwaysStopAt="true" />
+  <template name="scf" value="spyOn($object$, '$method$').and.callFake($fake$);&#10;$END$" description="Spy on and Call Fake" toReformat="true" toShortenFQNames="true">
+    <variable name="object" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="method" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="fake" expression="&quot;() =&gt; {}&quot;" defaultValue="" alwaysStopAt="true" />
     <context>
-      <option name="HAML" value="false" />
       <option name="ACTION_SCRIPT" value="false" />
       <option name="ASPECTJ" value="false" />
-      <option name="JAVA_SCRIPT" value="true" />
-      <option name="MAVEN" value="false" />
       <option name="GROOVY" value="false" />
-      <option name="PHP" value="false" />
+      <option name="GSP" value="false" />
+      <option name="HAML" value="false" />
+      <option name="JAVA_SCRIPT" value="true" />
       <option name="JSP" value="false" />
       <option name="MXML" value="false" />
+      <option name="PHP" value="false" />
       <option name="SQL" value="false" />
-      <option name="GSP" value="false" />
     </context>
   </template>
-  <template name="scf" value="spyOn($VAL0, '$VAL1$').and.callFake($VAL2$);$END$" description="spy on and call fake" toReformat="true" toShortenFQNames="true">
-    <variable name="VAL1" expression="" defaultValue="" alwaysStopAt="true" />
-    <variable name="VAL2" expression="" defaultValue="" alwaysStopAt="true" />
+  <template name="ehc" value="expect($method$).toHaveBeenCalled();&#10;$END$" description="Expect to Have been Called" toReformat="true" toShortenFQNames="true">
+    <variable name="method" expression="&quot;actual&quot;" defaultValue="" alwaysStopAt="true" />
     <context>
-      <option name="HAML" value="false" />
       <option name="ACTION_SCRIPT" value="false" />
       <option name="ASPECTJ" value="false" />
-      <option name="JAVA_SCRIPT" value="true" />
-      <option name="MAVEN" value="false" />
       <option name="GROOVY" value="false" />
-      <option name="PHP" value="false" />
+      <option name="GSP" value="false" />
+      <option name="HAML" value="false" />
+      <option name="JAVA_SCRIPT" value="true" />
       <option name="JSP" value="false" />
       <option name="MXML" value="false" />
+      <option name="PHP" value="false" />
       <option name="SQL" value="false" />
-      <option name="GSP" value="false" />
     </context>
   </template>
-  <template name="esc" value="expect($VAL0$).toHaveBeenCalled();$END$" description="expect was called" toReformat="true" toShortenFQNames="true">
-    <variable name="VAL0" expression="" defaultValue="" alwaysStopAt="true" />
+  <template name="ehcw" value="expect($method$).toHaveBeenCalledWith($parameters$);&#10;$END$" description="Expect to Have been Called With" toReformat="true" toShortenFQNames="true">
+    <variable name="method" expression="&quot;actual&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="parameters" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
-      <option name="HAML" value="false" />
       <option name="ACTION_SCRIPT" value="false" />
       <option name="ASPECTJ" value="false" />
-      <option name="JAVA_SCRIPT" value="true" />
-      <option name="MAVEN" value="false" />
       <option name="GROOVY" value="false" />
-      <option name="PHP" value="false" />
+      <option name="GSP" value="false" />
+      <option name="HAML" value="false" />
+      <option name="JAVA_SCRIPT" value="true" />
       <option name="JSP" value="false" />
       <option name="MXML" value="false" />
+      <option name="PHP" value="false" />
       <option name="SQL" value="false" />
-      <option name="GSP" value="false" />
     </context>
   </template>
-  <template name="escw" value="expect($VAL0$).toHaveBeenCalledWith($VAL1$);$END$" description="expect was called with" toReformat="true" toShortenFQNames="true">
-    <variable name="VAL0" expression="" defaultValue="" alwaysStopAt="true" />
-    <variable name="VAL1" expression="" defaultValue="" alwaysStopAt="true" />
+  <template name="eb" value="expect($actual$).toBe($expected$);&#10;$END$" description="Expect to Be" toReformat="true" toShortenFQNames="true">
+    <variable name="actual" expression="&quot;actual&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="expected" expression="&quot;expected&quot;" defaultValue="" alwaysStopAt="true" />
     <context>
-      <option name="HAML" value="false" />
       <option name="ACTION_SCRIPT" value="false" />
       <option name="ASPECTJ" value="false" />
-      <option name="JAVA_SCRIPT" value="true" />
-      <option name="MAVEN" value="false" />
       <option name="GROOVY" value="false" />
-      <option name="PHP" value="false" />
+      <option name="GSP" value="false" />
+      <option name="HAML" value="false" />
+      <option name="JAVA_SCRIPT" value="true" />
       <option name="JSP" value="false" />
       <option name="MXML" value="false" />
+      <option name="PHP" value="false" />
       <option name="SQL" value="false" />
-      <option name="GSP" value="false" />
     </context>
   </template>
-  <template name="notsc" value="expect($VAL0$).wasNotCalled();$END$&#10;" description="expect was not called" toReformat="true" toShortenFQNames="true">
-    <variable name="VAL0" expression="" defaultValue="" alwaysStopAt="true" />
-    <context>
-      <option name="HAML" value="false" />
-      <option name="ACTION_SCRIPT" value="false" />
-      <option name="ASPECTJ" value="false" />
-      <option name="JAVA_SCRIPT" value="true" />
-      <option name="MAVEN" value="false" />
-      <option name="GROOVY" value="false" />
-      <option name="PHP" value="false" />
-      <option name="JSP" value="false" />
-      <option name="MXML" value="false" />
-      <option name="SQL" value="false" />
-      <option name="GSP" value="false" />
-    </context>
-  </template>
-  <template name="notscw" value="expect($VAL0$).wasNotCalledWith($VAL1$);$END$" description="expect was not called with" toReformat="true" toShortenFQNames="true">
-    <variable name="VAL0" expression="" defaultValue="" alwaysStopAt="true" />
-    <variable name="VAL1" expression="" defaultValue="" alwaysStopAt="true" />
-    <context>
-      <option name="HAML" value="false" />
-      <option name="ACTION_SCRIPT" value="false" />
-      <option name="ASPECTJ" value="false" />
-      <option name="JAVA_SCRIPT" value="true" />
-      <option name="MAVEN" value="false" />
-      <option name="GROOVY" value="false" />
-      <option name="PHP" value="false" />
-      <option name="JSP" value="false" />
-      <option name="MXML" value="false" />
-      <option name="SQL" value="false" />
-      <option name="GSP" value="false" />
-    </context>
+  <template name="eu" value="expect($actual$).toBeUndefined();&#10;$END$" description="Expect to be Undefined" toReformat="false" toShortenFQNames="true">
+    <variable name="actual" expression="&quot;actual&quot;" defaultValue="" alwaysStopAt="true" />
   </template>
 </templateSet>

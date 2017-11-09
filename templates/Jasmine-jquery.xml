@@ -2,51 +2,32 @@
   <template name="fp" value="jasmine.getJSONFixtures().fixturesPath = $VAL0$;$END$" description="Fixture path" toReformat="true" toShortenFQNames="true">
     <variable name="VAL0" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
-      <option name="HAML" value="false" />
       <option name="ACTION_SCRIPT" value="false" />
       <option name="ASPECTJ" value="false" />
-      <option name="JAVA_SCRIPT" value="true" />
-      <option name="MAVEN" value="false" />
-      <option name="JSP" value="false" />
-      <option name="PHP" value="false" />
       <option name="GROOVY" value="false" />
-      <option name="MXML" value="false" />
-      <option name="SQL" value="false" />
       <option name="GSP" value="false" />
+      <option name="HAML" value="false" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="JSP" value="false" />
+      <option name="MXML" value="false" />
+      <option name="PHP" value="false" />
+      <option name="SQL" value="false" />
     </context>
   </template>
   <template name="gf" value="const $VAL0$ = getJSONFixture($VAL1$);$END$" description="Get fixture" toReformat="true" toShortenFQNames="true">
     <variable name="VAL0" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="VAL1" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
-      <option name="HAML" value="false" />
       <option name="ACTION_SCRIPT" value="false" />
       <option name="ASPECTJ" value="false" />
-      <option name="JAVA_SCRIPT" value="true" />
-      <option name="MAVEN" value="false" />
-      <option name="JSP" value="false" />
-      <option name="PHP" value="false" />
       <option name="GROOVY" value="false" />
-      <option name="MXML" value="false" />
-      <option name="SQL" value="false" />
       <option name="GSP" value="false" />
-    </context>
-  </template>
-  <template name="eb" value="expect($VAL0$).toBe($VAL1$);$END$" description="exect to be" toReformat="true" toShortenFQNames="true">
-    <variable name="VAL0" expression="" defaultValue="" alwaysStopAt="true" />
-    <variable name="VAL1" expression="" defaultValue="" alwaysStopAt="true" />
-    <context>
       <option name="HAML" value="false" />
-      <option name="ACTION_SCRIPT" value="false" />
-      <option name="ASPECTJ" value="false" />
       <option name="JAVA_SCRIPT" value="true" />
-      <option name="MAVEN" value="false" />
       <option name="JSP" value="false" />
-      <option name="PHP" value="false" />
-      <option name="GROOVY" value="false" />
       <option name="MXML" value="false" />
+      <option name="PHP" value="false" />
       <option name="SQL" value="false" />
-      <option name="GSP" value="false" />
     </context>
   </template>
 </templateSet>

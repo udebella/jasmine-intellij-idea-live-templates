@@ -1,0 +1,22 @@
+<templateSet group="surround">
+  <template name="Q" value="'$SELECTION$'" description="Surround with Quotes" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+  <template name="DQ" value="&quot;$SELECTION$&quot;" description="Surround with Double Quotes" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_CODE" value="true" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="KOTLIN" value="true" />
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+  <template name="BT" value="`$SELECTION$`" description="Surround with Back-Tick" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+</templateSet>
